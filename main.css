@@ -24,7 +24,9 @@ a {
     max-width: 1450px;
     margin: 0 auto;
 }
-
+.brands-wrapper {
+    max-width: 1800px;
+}
 
 
 /* TOP PAGE */
@@ -57,9 +59,7 @@ a {
     transition: 0.3s;
 }
 .home {
-    font-weight: medium;
-    color: rgb(134, 134, 160);
-    text-decoration: underline;
+    color: rgb(187, 187, 206);
 }
 .contact {
     border: 2px solid #FFFFFF;
@@ -142,6 +142,7 @@ a {
 .brands-parent {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: #21212E;
     padding-left: 87px;
 }
@@ -214,16 +215,17 @@ a {
     margin-bottom: 45px;
     margin-left: 50px;
 }
-.circle {
+.circle-icon {
     position: absolute;
     right: -10px;
     width: 300px;
     margin-top: -100px;
+    z-index: 1;
 }
 .brands-text {
     text-align: left;
     margin-top: 300px;
-    max-width: 580px;
+    max-width: 400px;
 }
 .brands-text h2 {
     color: #ffffff;
@@ -243,6 +245,7 @@ a {
 .customize-parent {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 180px;
 }
 .customize-text-container {
     margin-top: 650px;
@@ -346,6 +349,7 @@ a {
 .top-card {
     display: flex;
     justify-content: space-between;
+    font-weight: 400;
     width: 551px;
     height: 352px;
     padding: 70px 44px 0 44px;
@@ -364,7 +368,7 @@ a {
 }
 .time {
     font-size: 34px;
-    font-weight: bold;
+    font-weight: 400;
     color: #FFFFFF;
     margin-bottom: 0;
 }
@@ -373,3 +377,109 @@ a {
     color: #090D17;
     opacity: 0.5;
 }
+
+/* Bottom Card */
+.bottom-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #20202C;
+    padding-left: 44px;
+    padding-right: 27px;
+    padding-top: 208px;
+    height: 626px;
+    border-radius: 0px 0px 7px 7px;
+    box-shadow: 0px 0px 20px 0px #0000008A;
+    overflow: hidden;
+}
+.running-apps {
+    display: flex;
+    justify-content: space-between;
+}
+.running-apps h4 {
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+}
+.running-apps h5 {
+    font-weight: 400;
+    font-size: 22px;
+    color: #8563FC;
+}
+.cards-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* Today's Consumption */
+.consumption-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: 377px;
+    width: 382px;
+    background-color: #20202C;
+    box-shadow: 0px 0px 20px 0px #0000008A;
+    border-radius: 7px;
+}
+
+.consumption-card h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 18px;
+    background-color: #39394D;
+    width: 100%;
+}
+
+.progress-container {
+    position: relative;
+}
+
+svg {
+    transform: rotate(-90deg);
+    width: 180px;
+    height: 180px;
+    margin-top: 30px;
+    overflow: visible;
+}
+
+.circle-bg {
+    stroke: #262634;
+    stroke-width: 3;
+    fill: none;
+    padding: 10px;
+}
+
+.circle {
+    stroke: #00ff99;
+    stroke-width: 4;
+    fill: none;
+    stroke-linecap: round;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    transition: stroke-dashoffset 1s ease;
+    filter: drop-shadow(0 0 3px #00ff99);
+}
+
+.value {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+  
+}
+
+.units {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+}   
