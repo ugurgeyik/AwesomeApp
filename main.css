@@ -26,14 +26,20 @@ a {
 }
 .brands-wrapper {
     max-width: 1800px;
+    margin: 0 auto;
 }
-
+.circle-wrapper {
+    position: relative;
+    max-width: 1450px;
+    margin: 0 auto
+}
 
 /* TOP PAGE */
 .top-page {
     background-image: url(img/top-bg.png);
     background-repeat: no-repeat;
     height: 1080px;
+    background-position: center;
 }
 .top-bar {
     display: flex;
@@ -217,10 +223,8 @@ a {
 }
 .circle-icon {
     position: absolute;
-    right: -10px;
+    right: -100px;
     width: 300px;
-    margin-top: -100px;
-    z-index: 1;
 }
 .brands-text {
     text-align: left;
@@ -340,8 +344,12 @@ a {
 
 
 /* CARDS */
+.widget-cards-container {
+    position: relative;
+}
 .widget-section {
     display: flex;
+    justify-content: space-between;
 }
 .widgets-container {
     position: relative;
@@ -384,7 +392,7 @@ a {
     flex-direction: column;
     background-color: #20202C;
     padding-left: 44px;
-    padding-right: 27px;
+    padding-right: 30px;
     padding-top: 208px;
     height: 626px;
     border-radius: 0px 0px 7px 7px;
@@ -394,13 +402,14 @@ a {
 .running-apps {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
 }
 .running-apps h4 {
     font-weight: 400;
     font-size: 22px;
     color: white;
 }
-.running-apps h5 {
+.running-apps a {
     font-weight: 400;
     font-size: 22px;
     color: #8563FC;
@@ -409,8 +418,109 @@ a {
     display: flex;
     justify-content: space-between;
 }
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 20px 0px #0000008A;
+    width: 225px;
+    height: 245px;
+    border-radius: 7px;
+}
+.card2 {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 20px 0px #0000008A;
+    width: 225px;
+    height: 245px;
+    border-radius: 7px;
+    align-self: flex-start;
+}
+.card-icons {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 16px;
+}
+.card-text {
+    background: #39394D;
+    padding-left: 30px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.card-text h4 { 
+    color: white;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+.card-text p {
+    color: #66667E;
+    font-size: 13px;
+}
+.power-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot {
+    width: 30px;
+    height: 30px;
+}
 
 
+/*Count Card*/
+.count-cards-container {
+    display: flex;
+}
+
+
+
+/* Light's Card */
+.lights-card {
+    width: 450px;
+    height: 273px;
+    border-radius: 7px;
+    background: #20202C;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 20px 0px #0000008A;
+    padding: 25px 25px 25px 25px;
+    background-image: url(img/bulb.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 250px;
+    left: -150px;
+}
+.lights-card h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.lights-container {
+    display: flex;
+    justify-content: space-between;
+}
+.light-number {
+    color: #FFFFFF;
+    font-size: 34px;
+    margin-bottom: 14px;
+}
+.light-type {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.light-time {
+    color: #66667E;
+}
+.light-message {
+    font-size: 12px;
+    color: #66667E;
+}
 
 
 /* Today's Consumption */
@@ -425,6 +535,9 @@ a {
     background-color: #20202C;
     box-shadow: 0px 0px 20px 0px #0000008A;
     border-radius: 7px;
+    position: absolute;
+    top: 150px;
+    left: 340px;
 }
 
 .consumption-card h3 {
@@ -483,3 +596,33 @@ svg {
     transform: translate(-50%, -50%);
     font-size: 17px;
 }   
+
+
+/* Widget Text */
+.widget-text-container {
+    max-width: 560px;
+    margin-top: 250px;
+}
+.widget-text-container h4 {
+    width: 184px;
+    height: 50px;
+    background-color: rgba(0, 236, 153, 0.1);
+    color: #00EC98;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.widget-text-container h3 {
+    font-size: 40px;
+    color: #FFFFFF;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.widget-text-container p {
+    color: #66667E;
+    font-size: 16px;
+    line-height: 35px;
+    margin-bottom: 50px;
+}

@@ -78,9 +78,11 @@
                     <h2>We've partnered with <br> awesome folks</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, atque eaque eius esse et harum inventore ipsam nam necessitatibus nemo pariatur provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, atque eaque eius esse et harum inventore</p>
                 </div>
-                <div class="circle-icon">
-                    <img src="img/circle.png" alt="">
-                </div>
+                <div class="circle-wrapper">
+                    <div class="circle-icon">
+                        <img src="img/circle.png" alt="">
+                    </div>
+                </div>            
             </div>
         </div>
     </div>
@@ -155,13 +157,13 @@
                     <div class="bottom-card">
                         <div class="running-apps">
                             <h4>Running Appliances</h4>
-                            <h5>See All</h5>
+                            <a href="#">See All</a>
                         </div>
                         <div class="cards-container">
-                            <div class="card">
+                            <div class="card1">
                                 <div class="card-icons">
-                                    <img src="img/ac.png" alt="">
-                                    <img src="img/dot.png" alt="">
+                                    <img class="ac" src="img/ac.png" alt="">
+                                    <img class="dot" src="img/dot.png" alt="">
                                 </div>
                                 <div class="card-text">
                                     <h4>Air Conditioner</h4>
@@ -171,10 +173,10 @@
                                     <img src="img/power.png" alt="">
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card2">
                                 <div class="card-icons">
                                     <img src="img/mini-bulb.png" alt="">
-                                    <img src="img/dot.png" alt="">
+                                    <img class="dot" src="img/dot.png" alt="">
                                 </div>
                                 <div class="card-text">
                                     <h4>Smart Light</h4>
@@ -193,23 +195,23 @@
                                 <div class="light">
                                     <p class="light-number">6</p>
                                     <p class="light-type">Garden Lights</p>
-                                    <p class="light-tim">03:30:33</p>
+                                    <p class="light-time">03:30:33</p>
                                 </div>
                                 <div class="light">
                                     <p class="light-number">6</p>
                                     <p class="light-type">Cordial light</p>
-                                    <p class="light-tim">03:30:33</p>
+                                    <p class="light-time">03:30:33</p>
                                 </div>
                                 <div class="light">
                                     <p class="light-number">6</p>
                                     <p class="light-type">Hall Lights</p>
-                                    <p class="light-tim">02:30:33</p>
+                                    <p class="light-time">02:30:33</p>
                                 </div>
                             </div>
-                            <p>All lights will switch of automatically as per the timer which is there in the setting.</p>
+                            <p class="light-message">All lights will switch of automatically as per the timer which is there in the setting.</p>
                         </div>
                         <div class="consumption-card">
-                            <h3>Today Consumption</h3>
+                            <h3>Today's Consumption</h3>
                             <div class="progress-container">
                                 <svg width="120" height="120" viewBox="0 0 100 100">
                                     <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
@@ -226,7 +228,7 @@
                 <h4>Powerful Features</h4>
                 <h3>Powered with multiple design blocks</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, atque eaque eius esse et harum inventore ipsam nam necessitatibus nemo pariatur provident.</p>
-                <button>All Features</button>
+                <button class="features-btn">All Features</button>
             </div>
         </div>
     </div>
