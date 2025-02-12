@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     
     <div class="top-page">
@@ -150,7 +152,11 @@
                             <p>Ugur Geyik</p>
                         </div>
                         <div class="top-card-time">
-                            <p class="time">06:30</p>
+                            <span id="hours">00</span>
+                            <span>:</span>
+                            <span id="minutes">00</span>
+                            <span>:</span>
+                            <span id="seconds">00</span>
                             <p class="meridiem">PM</p>
                         </div>
                     </div>
@@ -232,7 +238,67 @@
             </div>
         </div>
     </div>
+
+    <div class="circle-wrapper">
+        <img class="square-icon" src="img/square.png" alt="">
+    </div>
+
+
+    <div class="wrapper">
+        <div class="pricing-container">
+            <div class="pricing-header-container">
+                <h3>Transparent pricing</h3>
+                <p>Our plans have everything you need to take your app to the next level.</p>
+                <p>No hidden fees.</p>
+                <div class="toggle-buttons">
+                    <div class="toggle-option active">Monthly</div>
+                    <div class="toggle-option">Yearly</div>
+                </div>
+            </div>
+            <div class="plans-container">
+                <div class="plan-card-small">
+                    <div class="plan-header">
+                        <h4>Basic</h4>
+                        <p>For Small Businesses</p>
+                    </div>
+                    <div class="plan-price">
+                        <h4>$10</h4>
+                        <p>Per Month</p>
+                    </div>
+                    <p class="plan-text">Lorem ipsum dolor sit amet, atque eaque eius esse et harum inventore nemo pariatur provident.</p>    
+                    <button class="get-button">Get It Now</button>
+                </div>
+                <div class="plan-card-big">
+                    <div class="plan-header">
+                        <h4>Business</h4>
+                        <p>For Small Businesses</p>
+                    </div>
+                    <div class="plan-price">
+                        <h4>$25</h4>
+                        <p>Per Month</p>
+                    </div>
+                    <p class="plan-text">Lorem ipsum dolor sit amet, atque eaque eius esse et harum inventore nemo pariatur provident.
+                        Lorem ipsum dolor sit amet, atque eaque eius esse et harum inventore nemo.</p>    
+                    <button class="get-button">Get It Now</button>
+                </div>
+                <div class="plan-card-small">
+                    <div class="plan-header">
+                        <h4>Enterprise</h4>
+                        <p>For Small Businesses</p>
+                    </div>
+                    <div class="plan-price">
+                        <h4>$15</h4>
+                        <p>Per Month</p>
+                    </div>
+                    <p class="plan-text">Lorem ipsum dolor sit amet, atque eaque eius esse et harum inventore nemo pariatur provident.</p>    
+                    <button class="get-button">Get It Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="script.js"></script>
+
 </body>
+
 </html>
