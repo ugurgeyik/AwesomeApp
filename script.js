@@ -115,3 +115,34 @@ toggleOptions.forEach(option => {
         option.classList.add('active');
     });
 });
+
+
+//ACCORDION
+
+// Select all the accordion headers
+const headers = document.querySelectorAll('.accordion-header');
+
+// Loop through all headers
+headers.forEach(header => {
+    header.addEventListener('click', () => {
+        // Toggle active class
+        const item = header.parentElement;
+        item.classList.toggle('active');
+
+        // Change the icon text
+        const icon = header.querySelector('.icon');
+        if (item.classList.contains('active')) {
+            icon.textContent = "-";
+        } else {
+            icon.textContent = "+";
+        }
+
+        // Close other open items for accordion behavior
+        headers.forEach(otherHeader => {
+            if (otherHeader !== header) {
+                otherHeader.parentElement.classList.remove('active');
+                otherHeader.querySelector('.icon').textContent = "+";
+            }
+        });
+    });
+});
