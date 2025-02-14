@@ -347,6 +347,7 @@ a {
 .widget-section {
     display: flex;
     justify-content: space-between;
+    margin-left: 10rem;
 }
 .widgets-container {
     position: relative;
@@ -599,7 +600,7 @@ svg {
 
 /* Widget Text */
 .widget-text-container {
-    max-width: 56.0rem;
+    max-width: 50rem;
     margin-top: 25.0rem;
 }
 .widget-text-container h4 {
