@@ -670,6 +670,7 @@ svg {
     font-size: 1.8rem;
     margin-bottom: 6rem;
     box-shadow: 0px 0px 7.5px 0px #00000012;
+    user-select: none;
 }
 
 .toggle-option {
@@ -810,6 +811,7 @@ svg {
     box-shadow: 0px 0px 20px 0px #0000008A;
     position: relative;
     width: 100%;
+    user-select: none;
 }
 
 .accordion-header {
