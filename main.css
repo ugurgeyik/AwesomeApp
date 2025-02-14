@@ -883,6 +883,7 @@ svg {
 .get-started-text h4 {
     color: #FFFFFF;
     font-size: 3.6rem;
+    font-weight: 400;
     margin-bottom: 2rem;
 }
 .get-started-text p {
