@@ -362,7 +362,7 @@ a {
 }
 .top-card-name h3 {
     font-size: 3.4rem;
-    font-weight: bold;
+    font-weight: 400;
     color: #FFFFFF;
     margin-bottom: 1.4rem;
 }
@@ -450,6 +450,7 @@ a {
 .card-text h4 { 
     color: white;
     font-size: 1.7rem;
+    font-weight: 400;
     margin-bottom: 4px;
 }
 .card-text p {
