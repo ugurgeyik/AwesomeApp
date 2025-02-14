@@ -791,7 +791,7 @@ svg {
 .accordion-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 30rem;
+    margin-bottom: 24rem;
 }
 .accordion-first-column {
     margin-right: 5rem;
@@ -865,4 +865,55 @@ svg {
     display: block;
 }
 
+/*Get Started */
+.get-started-container {
+    background-color: #262635;
+    padding: 7rem 0;
+    margin-bottom: 10rem;
+}
+.get-started-wrapper {
+    max-width: 145.0rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.get-started-text h4 {
+    color: #FFFFFF;
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+}
+.get-started-text p {
+    font-size: 1.6rem;
+    color: #66667E;
+    max-width: 70%;
+    line-height: 3.5rem;
+}
 
+/*Footer */
+.footer-columns-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9rem;
+}
+.footer-column p {
+    color: #66667E;
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+}
+.footer-column h4 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.footer-column li {
+    color: #66667E;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    list-style-type: none;
+}
+.footer-column img {
+    margin-right: 2.4rem;
+}
