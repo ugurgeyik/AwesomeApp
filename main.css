@@ -231,7 +231,7 @@ a {
 .brands-text h2 {
     color: #ffffff;
     font-size: 3.6rem;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 4.0rem;
     margin-bottom: 4.0rem;
 }
@@ -265,7 +265,7 @@ a {
 }
 .customize-text-container h2 {
     text-align: left;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 3.6rem;
     letter-spacing: 0;
     color: #FFFFFF;
